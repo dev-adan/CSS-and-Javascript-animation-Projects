@@ -13,6 +13,11 @@ html {
 
 body{
     background-color: #fdf9f1;
+        background:linear-gradient(179deg, rgba(255, 250, 243, 1) 1%, rgba(255, 255, 255, 1) 39%);
+        background:linear-gradient(179deg, rgba(255, 250, 243, 1) 53%, rgba(255, 255, 255, 1) 70%);
+        background:linear-gradient(179deg, rgba(255, 250, 243, 1) 15%, rgba(255, 255, 255, 1) 48%);
+        background:linear-gradient(179deg, rgba(255, 250, 243, 1) 31%, rgba(255, 255, 255, 1) 52%);
+
 }
 
 a{
@@ -127,6 +132,7 @@ li {
     padding-top: 9rem; 
     align-items: center;
     /* background-color: #fdf9f1; */
+    padding-bottom: 10rem;
   
 
 }
@@ -149,7 +155,7 @@ li {
 .landing-page-left p{
     font-size: 2.5rem;
     font-weight: ligher;
-    outline: 1px solid yellow;
+    /* outline: 1px solid yellow; */
 
     
 }
@@ -182,6 +188,61 @@ height: auto;
     top: 60%;
   z-index: -20;
 
+}
 
 
+
+.pay-bill {
+    padding-top: 6rem;
+    background-color: #ffffff;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    /* width: 80%; */
+    /* margin: auto; */
+   
+
+   
+}
+
+
+.left-pay-bill {
+    /* outline: 2px solid green; */
+}
+.left-pay-bill img {
+    height: auto;
+    max-width: 450px;
+    
+}
+
+.right-pay-bill{
+    /* outline: 2px solid red; */
+}
+.right-pay-bill-content{
+    width: 80%;
+    margin: auto;
+}
+.right-pay-bill-content h1{
+    font-size: 4rem;
+}
+
+.right-pay-bill-content h1 span{
+    display: block;
+}
+
+.right-pay-bill-content p {
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.right-pay-bill-content button {
+    background-color: #313178;
+    color: #fff;
+    padding: 1.8rem 2.8rem;
+    font-size: 1.6rem;
+    font-weight: bolder;
+    border-radius: .5rem;
+    outline: none;
+    border: none;
+    margin-top: 2rem;
 }
