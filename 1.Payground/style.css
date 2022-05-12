@@ -128,32 +128,35 @@ li {
 
 .landing-page{
     display: flex;
-    justify-content: space-evenly;
-    padding-top: 9rem; 
+    /* justify-content: space-evenly; */
+    justify-content: center;
+    padding-top: 6rem; 
     align-items: center;
-    /* background-color: #fdf9f1; */
     padding-bottom: 10rem;
+
   
 
 }
 
 .landing-page-left{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: flex-end; */
     z-index: 20;
+    margin-right: 10rem;
+    margin-bottom: 5rem;
 
 
  
 }
 
 .landing-page-left h1{
-    font-size: 6rem;
+    font-size: 6.5rem;
 
 }
 
 .landing-page-left p{
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     font-weight: ligher;
     /* outline: 1px solid yellow; */
 
@@ -166,15 +169,25 @@ li {
 
 .landing-page-right{
    
-
+    width: 57rem;
+    margin-right: 1rem;
   
 }
 
 
+
 .landing-page-right img{
-width: 57rem;
+/* width: 57rem;
+height: auto; */
+max-width: 100%;
 height: auto;
 
+transition: filter .4s ease-in-out;
+
+}
+
+.landing-page-right img:hover{
+    filter: sepia(20%);
 }
 
 
@@ -217,6 +230,7 @@ height: auto;
 
 .right-pay-bill{
     /* outline: 2px solid red; */
+    padding-bottom: 5rem;
 }
 .right-pay-bill-content{
     width: 80%;
@@ -245,4 +259,51 @@ height: auto;
     outline: none;
     border: none;
     margin-top: 2rem;
+}
+
+
+
+
+
+.people-first{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+
+}
+.people-first-heading-container{
+  
+    
+}
+
+.people-first-heading{
+    /* font-size: 5rem;
+    font-weight: light; */
+    font-size: 4rem;
+    width: 55%;
+    margin: auto;
+    text-align: center;
+
+
+ 
+}
+
+.people-first-heading-container p{
+    font-size: 2.2rem;
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    margin-top: 2rem;
+
+}
+
+.people-first-cards{
+    outline: 2px solid red;
+    display: flex;
+}
+
+.people-first-cards .card{
+    background-color: #fdf9f1;
+    margin: .5rem;
 }
