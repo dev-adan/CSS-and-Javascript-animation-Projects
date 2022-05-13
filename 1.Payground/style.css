@@ -299,11 +299,42 @@ transition: filter .4s ease-in-out;
 }
 
 .people-first-cards{
-    outline: 2px solid red;
+   
     display: flex;
+    justify-content: center;
+    width: 70%;
+    margin: auto;
+
+
 }
 
 .people-first-cards .card{
     background-color: #fdf9f1;
-    margin: .5rem;
+    margin: 4rem;
+    padding: 3rem 4rem;
+    width: 100%;
+    min-width: 310px;
+    
+ 
+
+   
+}
+
+.people-first-cards .card p {
+    font-size: 2rem;
+}
+
+.people-first-cards .card strong{
+    font-size: 1.7rem;
+    display: inline-block;
+    padding-top: 2rem;
+}
+
+
+
+.card svg{
+   height : 1.5rem;
+   width: 1.5em;
+   fill: #4d509d;
+   margin-bottom: 2rem;
 }
