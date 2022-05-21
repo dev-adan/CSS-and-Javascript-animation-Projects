@@ -1,0 +1,17 @@
+@font-face {
+  font-family:  "HK Grotesk";
+  src: url(hk-grotesk.woff2), url(hk-grotesk.woff);
+}
+
+body {
+	font-family: "HK Grotesk", Arial;
+	font-size: 36px;
+	line-height: 1.25;
+	
+	background-color: #ffffff;
+	color: #333333;
+}
+
+header {
+  
+}

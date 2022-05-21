@@ -124,24 +124,33 @@ li {
     background-color:#122032;
 }
 
+.nav-mobile{
+    display: none;
+    font-size: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-mobile:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
 
 
 .landing-page{
     display: flex;
-    /* justify-content: space-evenly; */
     justify-content: center;
     padding-top: 6rem; 
     align-items: center;
     padding-bottom: 10rem;
 
-  
-
 }
 
+
+
+
+
 .landing-page-left{
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: flex-end; */
     z-index: 20;
     margin-right: 10rem;
     margin-bottom: 5rem;
@@ -149,6 +158,10 @@ li {
 
  
 }
+
+
+
+
 
 .landing-page-left h1{
     font-size: 6.5rem;
@@ -158,10 +171,9 @@ li {
 .landing-page-left p{
     font-size: 2.8rem;
     font-weight: ligher;
-    /* outline: 1px solid yellow; */
-
     
 }
+
 .landing-page-left span{
     display: block;
     
@@ -173,6 +185,8 @@ li {
     margin-right: 1rem;
   
 }
+
+
 
 
 
@@ -271,16 +285,15 @@ transition: filter .4s ease-in-out;
     align-items: center;
     padding-top: 5rem;
     background-color: white;
+    
+   
+  
 
 }
-.people-first-heading-container{
-  
-    
-}
+
 
 .people-first-heading{
-    /* font-size: 5rem;
-    font-weight: light; */
+
     font-size: 4rem;
     width: 55%;
     margin: auto;
@@ -305,6 +318,7 @@ transition: filter .4s ease-in-out;
     justify-content: center;
     width: 70%;
     margin: auto;
+    
 
 
 }
@@ -373,7 +387,6 @@ transition: filter .4s ease-in-out;
 
 .why-pay-grid{
     display: flex;
-    /* justify-content: space-evenly; */
     margin-top: 8rem;
     width: 75%;
     margin-left:  auto;
@@ -436,9 +449,15 @@ transition: filter .4s ease-in-out;
 }
 
 .image-div{
+    /* display: none; */
     width: 80%;
     margin: auto;
 }
+
+.image-div .mobile{
+    display: none;
+}
+
 
 .made-easy img{
 
@@ -525,5 +544,378 @@ margin-bottom: 12rem;
     /* min-width: 900px; */
     min-width: 450px;
 
+}
 
+
+.footer-links-section {
+    background-color: #f8fafc;
+    padding-top: 5rem;
+}
+
+/* .footer-links-logo {
+    display: flex-in;
+    width: 53%;
+    margin: auto;
+   
+    outline: 2px solid red;
+
+
+    
+
+}
+
+.footer-links-logo div{
+    display: flex;
+}
+.footer-links-logo div > h3 {
+    color: #071f3f;
+    font-size: 4rem;
+    padding: 0 1rem;
+  
+} */
+
+.footer-links-logo  img{
+    width: 4.5rem;
+}
+
+
+
+.footers-links{
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
+    width: 80%;
+    margin: auto;
+   
+}
+
+.footers-links > .links{
+    margin: 0 2rem;
+   
+}
+
+.link-1 img{
+    width: 180px;
+    margin-top: 1.2rem;
+    margin-left: -1rem;
+}
+
+.link-1 p{
+    font-size: 1.7rem;
+    width: 80%;
+    margin-top: 2rem;
+}
+
+.link-1 a{
+    display: flex;
+    color: #071f3f;
+    font-size: 2rem;
+
+}
+
+
+.link-4 p {
+    font-size: 2rem;
+    margin: 1.5rem 0;
+
+}
+
+.link-4 span{
+    display: block;
+}
+
+.links ul li{
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+
+
+.links > h3{
+    font-size: 2.4rem;
+    color: #122032;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+
+    .nav-right{
+        display: none;
+    }
+
+    .nav-left ul{
+        display: none;
+    }
+
+    .nav-mobile{
+        display: block;
+    }
+
+
+
+     .landing-page-left{
+    z-index: 20;
+    margin-right: 2rem;
+    margin-bottom: 3rem;
+
+ 
+} 
+
+
+
+ .landing-page-right{
+   
+    width: 46rem;
+    margin-right: 1rem;
+  
+} 
+.why-pay-grid {
+    width: 85%;
+    margin: auto;
+}
+.why-pay-grid  p{
+    font-size: 1.8rem;
+}
+
+.people-first-cards{
+    width: 100%;
+    
+}
+
+.people-first-cards .card{
+    min-width: 200px;
+    padding: 1.5rem 2rem;
+    
+}
+
+.people-first-cards .card p {
+    font-size: 1.8rem;
+}
+
+.people-first-cards .card strong{
+    font-size: 1;
+   
+}
+
+
+
+   
+}
+
+@media screen and (max-width : 1022px) {
+.landing-page-left h1{
+    font-size: 4.5rem;
+
+} 
+
+
+ .landing-page-left p{
+    font-size: 2.3rem;
+    font-weight: ligher;
+    
+} 
+
+.landing-page-right{
+   
+    width: 40rem;
+    margin-right: 1rem;
+  
+} 
+
+.why-pay-grid {
+    width: 90%;
+    margin: auto;
+}
+.why-pay-grid  p{
+    font-size: 1.7rem;
+}
+
+.people-first-heading{
+    font-size: 5rem;
+}
+.people-first-heading-container p{
+    font-size: 1.9rem;
+}
+
+.people-first-cards{
+    /* width: 100%; */
+    flex-wrap: wrap;
+  
+
+    
+}
+
+.people-first-cards .card{
+    min-width: 120px;
+ 
+    
+}
+
+.image-div{
+    width: 100%;
+    overflow: hidden;
+    
+    
+}
+
+.medical-provider{
+    flex-direction: column;
+}
+
+.medical-prodiver-left-div-wrapper{
+    width: 100%;
+}
+.medical-provider-right-div{
+   
+    text-align: center;
+}
+.medical-provider-img-container{
+    /* width: 100%; */
+}
+
+.medical-provider-right-div img{
+
+    min-width: 400px;
+
+}
+.medical-provider-left-div span{
+    display: inline;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.medical-provider-left-div  { 
+
+    margin-bottom: 3rem;
+    text-align: center;
+    
+    
+    }
+
+    .medical-provider-left-div p {
+        font-size: 2rem;
+        width: 50%;
+        min-width:300px;
+        margin-top: 2rem;
+        margin: auto;
+        padding-top: 1rem;
+    }
+
+
+
+    
+}
+
+@media screen and (max-width : 874px) {
+
+    
+.landing-page{
+ 
+    flex-wrap: wrap;
+
+}
+
+
+.landing-page-right{
+     min-width: 350px;
+    width: 75%;
+    padding-top: 1rem;
+  
+  
+}
+
+.landing-page-left {
+    width: 90%;
+    margin: auto;
+}
+.landing-page-left span{
+    display: inline;
+    
+}
+
+.people-first-heading{
+    font-size: 3.3rem;
+    width: 100%;
+    
+}
+
+.pay-bill{
+    flex-wrap: wrap;
+    padding-top: 0rem;
+
+}
+
+.right-pay-bill-content{
+    width: 100%;
+    margin-right: 1rem;
+    margin-left: 1rem;
+   
+}
+.right-pay-bill-content h1{
+    font-size: 3.5rem;
+}
+.right-pay-bill-content p {
+    font-size: 1.9rem;
+    padding-bottom: 2rem;
+}
+
+.right-pay-bill-content span {
+    display: inline;
+
+}
+
+.why-pay-grid{
+    flex-direction: column;
+    text-align: center;
+
+}
+
+
+.why-pay > h1{
+    font-size: 4.4rem;
+}
+
+.why-pay > p {
+    font-size: 2.5rem;
+    width: 94%;
+}
+
+
+
+.medical-provider-left-div span{
+    display: inline;
+}
+
+
+.link-4 {
+
+    display: none;
+}
+}
+
+@media screen and (max-width : 468px) {
+    .image-div .big-screen {
+        display: none;
+    
+    }
+    
+    .image-div .mobile{
+        display: inline;
+    }
+    
+    .made-easy img{
+        min-width: 480px;
+    }
+
+    .footers-links{
+        flex-wrap: wrap;
+    }
+
+    .link-1{
+       padding-bottom: 2rem;
+    }
+    
+
+    
+    
 }
