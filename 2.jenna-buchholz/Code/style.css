@@ -13,5 +13,8 @@ body {
 }
 
 header {
+	position: fixed;
+	top: 36px;
+	left: 36px;
   
 }
