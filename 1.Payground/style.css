@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
 }
 
 html {
@@ -12,10 +13,7 @@ html {
 }
 
 body{
-    background-color: #fdf9f1;
-        background:linear-gradient(179deg, rgba(255, 250, 243, 1) 1%, rgba(255, 255, 255, 1) 39%);
-        background:linear-gradient(179deg, rgba(255, 250, 243, 1) 53%, rgba(255, 255, 255, 1) 70%);
-        background:linear-gradient(179deg, rgba(255, 250, 243, 1) 15%, rgba(255, 255, 255, 1) 48%);
+
         background:linear-gradient(179deg, rgba(255, 250, 243, 1) 31%, rgba(255, 255, 255, 1) 52%);
 
 }
@@ -143,6 +141,7 @@ li {
     padding-top: 6rem; 
     align-items: center;
     padding-bottom: 10rem;
+    overflow: hidden;
 
 }
 
@@ -815,6 +814,12 @@ margin-bottom: 12rem;
 
 }
 
+.landing-page-right::after{
+    height: 100px;
+    top : 90%;
+}
+
+
 
 .landing-page-right{
      min-width: 350px;
@@ -894,6 +899,7 @@ margin-bottom: 12rem;
 }
 
 @media screen and (max-width : 468px) {
+
     .image-div .big-screen {
         display: none;
     
@@ -916,6 +922,49 @@ margin-bottom: 12rem;
     }
     
 
+}
+
+@media screen and (max-width : 413px) {
+
+    .nav-left img{
+        width: 3.5rem;
+    }
+
+    .nav-left h3 {
     
+        font-size: 3rem;
+  
+    }
+
+   
+
+    .medical-provider-right-div img{
+      
+        min-width: 100%;
     
+    }
+    .footer-links-section {
+       
+        padding-top: 0rem;
+    }
+
+    .footers-links{
+       
+        width: 100%;
+        margin: auto;
+       
+       
+    }
+
+    .link-1{
+        text-align: center;
+        
+    }
+
+    .link-1 a{
+        display: none;
+    }
+
+  
+
 }
