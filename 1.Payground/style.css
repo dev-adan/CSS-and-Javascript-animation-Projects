@@ -142,6 +142,7 @@ li {
     align-items: center;
     padding-bottom: 10rem;
     overflow: hidden;
+    
 
 }
 
@@ -153,9 +154,26 @@ li {
     z-index: 20;
     margin-right: 10rem;
     margin-bottom: 5rem;
+    animation: landingPageLeft 1s ease-in;
+    
+    
+
+    
+  
+
+}
 
 
- 
+@keyframes landingPageLeft {
+    from {
+        transform: translateX(-300px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    
 }
 
 
@@ -182,7 +200,22 @@ li {
    
     width: 57rem;
     margin-right: 1rem;
+    animation: landingPageRight 1s ease-in;
+
   
+}
+
+@keyframes landingPageRight {
+    from {
+        transform: translateX(300px);
+        opacity: 0;
+
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    
 }
 
 
@@ -213,7 +246,33 @@ transition: filter .4s ease-in-out;
     left:0%;
     top: 60%;
   z-index: -20;
+  animation: landingPageAfter 1.5s ease-in;
+     animation-delay: .5s;
+     
 
+}
+
+
+@keyframes landingPageAfter {
+    0% {
+        opacity: 0;
+        transform: translateY(300px);
+     
+
+    }
+    90%{
+        opacity: .5;
+        transform: translateY(50px);
+      
+ 
+
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+      
+    }
+    
 }
 
 
