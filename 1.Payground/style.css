@@ -5,11 +5,14 @@
     margin: 0;
     box-sizing: border-box;
     
+    
+    
 }
 
 html {
     font-size: 62.5%;
     box-sizing: inherit;
+   
 }
 
 body{
@@ -30,7 +33,6 @@ li {
     display: flex;
     justify-content: space-between;
     padding: 1.5rem 3rem;
-    /* flex-wrap: wrap; */
     background-color: #fdf9f1;
 }
 
@@ -38,8 +40,6 @@ li {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    /* background-color: red; */
-    /* outline: 3px solid yellow; */
     
 }
 
@@ -58,7 +58,6 @@ li {
 
 .nav-left ul{
     display: flex;
-    /* outline: 3px solid green; */
     padding: 0 5.5rem;
     width: 100%;
   
@@ -141,42 +140,20 @@ li {
     padding-top: 6rem; 
     align-items: center;
     padding-bottom: 10rem;
-    overflow: hidden;
+
+  
     
 
 }
-
-
-
-
 
 .landing-page-left{
     z-index: 20;
     margin-right: 10rem;
     margin-bottom: 5rem;
-    animation: landingPageLeft 1s ease-in;
-    
-    
-
-    
-  
-
+    transform: translateX(-200px);
+    transition:  400ms;
+    opacity: 0;
 }
-
-
-@keyframes landingPageLeft {
-    from {
-        transform: translateX(-300px);
-        opacity: 0;
-    }
-    to{
-        transform: translateX(0px);
-        opacity: 1;
-    }
-    
-}
-
-
 
 
 
@@ -197,37 +174,20 @@ li {
 }
 
 .landing-page-right{
+    position: relative;
    
     width: 57rem;
     margin-right: 1rem;
-    animation: landingPageRight 1s ease-in;
+    transform:  translateX(200px);
+    transition:  400ms;
+    opacity: 0;
 
-  
 }
-
-@keyframes landingPageRight {
-    from {
-        transform: translateX(300px);
-        opacity: 0;
-
-    }
-    to{
-        transform: translateX(0px);
-        opacity: 1;
-    }
-    
-}
-
-
-
 
 
 .landing-page-right img{
-/* width: 57rem;
-height: auto; */
 max-width: 100%;
 height: auto;
-
 transition: filter .4s ease-in-out;
 
 }
@@ -241,50 +201,15 @@ transition: filter .4s ease-in-out;
     content : '';
     position: absolute;
     background-image : url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1302.09 300.97'%3E%3Cg data-name='Layer 2'%3E%3Cg data-name='Layer 1'%3E%3Cpath fill='%2300be9e' d='M358.42 207.26a318 318 0 0 1-58.86-5.65c-25.34-4.76-50.59-14.51-77.32-24.84-57.4-22.18-122.46-47.32-221.6-39.83l-.14-1.88c99.56-7.52 164.83 17.7 222.42 39.95 26.65 10.29 51.82 20 77 24.74 43.44 8.15 84.34 7.45 125-2.16 37.39-8.82 75.27-25.06 119.21-51.09 58.24-34.5 112.28-56.45 165.23-67.11 61.78-12.45 122.33-9.86 185.1 7.9 117.39 33.23 166.75 26.63 244.25 4.92 53.55-15 101.56-49.65 133.33-72.57 12.49-9 22.35-16.12 29.19-19.64l.86 1.68c-6.71 3.46-16.52 10.53-28.94 19.49-31.88 23-80.06 57.76-133.93 72.86-77.85 21.81-127.42 28.43-245.28-4.92-62.47-17.68-122.73-20.26-184.21-7.87-52.73 10.62-106.58 32.5-164.62 66.89-44.11 26.13-82.11 42.43-119.73 51.3a290 290 0 0 1-66.96 7.83z'/%3E%3Cpath fill='%23ffbac8' d='M1221.94 157.46l-2.39-4.84c25-12.31 46.16-27.13 63.56-40l3.2 4.34c-17.59 13.04-39 28.04-64.37 40.5z'/%3E%3Cpath fill='%23fc5f5b' d='M1055.51 200.92c-28.28 0-60.48-3.74-102.55-12.57l3.1-14.78c101.43 21.29 143.67 12 215.57-7.75l4 14.57c-44.44 12.2-77.91 20.53-120.12 20.53z'/%3E%3Ccircle fill='%234c50a7' cx='323.97' cy='291.39' r='9.58'/%3E%3Ccircle fill='%23ffbac8' cx='673.5' cy='204.84' r='9.58'/%3E%3Ccircle fill='%23ff8a70' cx='885.71' cy='161.82' r='7.86'/%3E%3Cpath fill='%23ff8a70' d='M92.13 268.78l19-18.12a.28.28 0 0 0 0-.42l-18.19-15.5a.28.28 0 0 0-.46.2l-.76 33.63a.28.28 0 0 0 .41.21zM145.14 265.13l20-17a.29.29 0 0 0 0-.42l-17.24-16.55a.28.28 0 0 0-.48.18l-2.75 33.52a.28.28 0 0 0 .47.27zM195.5 271.16l23.11-12.39a.28.28 0 0 0 .1-.4l-13.38-19.81a.28.28 0 0 0-.5.08l-9.73 32.19a.28.28 0 0 0 .4.33zM248.4 286l24.51-9.3a.29.29 0 0 0 .16-.39l-10.71-21.41a.29.29 0 0 0-.51 0L248 285.58a.28.28 0 0 0 .4.42z'/%3E%3Cpath fill='%23ffc400' d='M840.73 177.41l-19.14-14.83 18.77-19.71.83 34.31a.29.29 0 0 1-.46.23z'/%3E%3Cpath fill='%23303178' d='M767.68 170.85a17.76 17.76 0 0 1-35.25 4.31z'/%3E%3Cpath fill='%23122033' d='M380.33 299.37c-5.59 0-11.25-.07-17-.21l.37-15.11c104.17 2.57 176.09-18.45 240.52-70.26l9.46 11.77c-63.87 51.34-134.38 73.81-233.35 73.81z'/%3E%3Cpath fill='%2300be9e' d='M298.34 208.1c-25.94-4.86-51.46-14.73-78.48-25.17C163.11 161 98.79 136.15 1.14 143.53L0 128.47c101.05-7.64 167.06 17.87 225.3 40.37 26.36 10.19 51.25 19.81 75.82 24.42z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-   
-    left:0%;
-    /* top: 60%; */
-  z-index: -20;
-  animation: landingPageAfter 1.5s ease-in;
-     animation-delay: .1s;
-     animation-fill-mode: forwards;
-     
+    right:0%;
+    z-index: -20;
+
+    top : 60%;
+    height: 300px;
+    width: 80vw;
+    opacity: 1;
 
 }
-
-
-@keyframes landingPageAfter {
-    0% {
-        opacity: 0;
-        /* transform: translateY(-300px); */
-     
-
-    }
-    30%{
-        /* opacity: .2; */
-    }
-    50%{
-        opacity: .5;
-        transform: translateY(-150px);
-      
- 
-
-    }
-  
-    100%{
-        top : 60%;
-        height: 300px;
-        width: 100vw;
-        opacity: 1;
-        transform: translateY(0px);
-      
-        
-        
-      
-    }
-    
-}
-
 
 
 .pay-bill {
@@ -293,30 +218,43 @@ transition: filter .4s ease-in-out;
     display: flex;
     justify-content:center;
     align-items: center;
-    /* width: 80%; */
-    /* margin: auto; */
-   
-
+  
+    
    
 }
 
 
 .left-pay-bill {
-    /* outline: 2px solid green; */
+        transform: translateX(-200px);
+        opacity: 0;
+        transition: 500ms;     
+
 }
+
+
 .left-pay-bill img {
     height: auto;
     max-width: 450px;
+   
     
 }
 
 .right-pay-bill{
-    /* outline: 2px solid red; */
+
     padding-bottom: 5rem;
+    transform: translateX(200px);
+    opacity: 0;
+    transition: 500ms; 
+
 }
+
+
+
 .right-pay-bill-content{
     width: 80%;
     margin: auto;
+ 
+    
 }
 .right-pay-bill-content h1{
     font-size: 4rem;
@@ -344,18 +282,16 @@ transition: filter .4s ease-in-out;
 }
 
 
-
-
-
 .people-first{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 5rem;
     background-color: white;
+    transform: translateX(-200px);
+    opacity: 0;
+    transition: 450ms;
     
-   
-  
 
 }
 
@@ -366,10 +302,10 @@ transition: filter .4s ease-in-out;
     width: 55%;
     margin: auto;
     text-align: center;
-
-
- 
+  
+    
 }
+
 
 .people-first-heading-container p{
     font-size: 2.2rem;
@@ -386,10 +322,10 @@ transition: filter .4s ease-in-out;
     justify-content: center;
     width: 70%;
     margin: auto;
-    
-
 
 }
+
+
 
 .people-first-cards .card{
     background-color: #fdf9f1;
@@ -398,9 +334,6 @@ transition: filter .4s ease-in-out;
     width: 100%;
     min-width: 310px;
     
- 
-
-   
 }
 
 .people-first-cards .card p {
@@ -425,15 +358,20 @@ transition: filter .4s ease-in-out;
 
 
 .why-pay{
-  
+ 
     background-color: white;
     padding-top: 8rem;
     padding-bottom: 6rem;
+    /* transform: translateX(px); */
+    opacity: 0;
+    transition: 450ms;
+    
 }
 
 .why-pay > h1{
     font-size: 6rem;
     text-align: center;
+    overflow: hidden;
 }
 
 .why-pay > p {
@@ -445,11 +383,14 @@ transition: filter .4s ease-in-out;
     margin-right: auto;
     margin-top: 2rem;
     
+
+    
 }
 
 
 .why-pay-grid-div img{
     width: 120px;
+   
 }
 
 
@@ -459,25 +400,25 @@ transition: filter .4s ease-in-out;
     width: 75%;
     margin-left:  auto;
     margin-right:  auto;
+  
 
 }
 
 .why-pay-grid-div {
     margin: 4rem;
+    
 }
 
 .why-pay-grid-div h2{
     font-size: 3rem;
     margin-top: .5rem;
+   
 }
 
 .why-pay-grid-div p{
     font-size: 2rem;
     margin-top: 2rem;
 
-    /* width: 95%; */
-   
-    
 }
 
 .made-easy {
@@ -486,22 +427,34 @@ transition: filter .4s ease-in-out;
     background-color: #4c50a2;
     color: #fff;
     padding-top: 5rem;
+
+    /* transform: translateX(10px); */
+    opacity: 0;
+    transition: 450ms;
+
+
+
 }
+
+
 
 .made-easy h1{
     font-size: 4rem;
+
 
 }
 
 .made-easy p {
     font-size: 2rem;
     margin-top: .9rem;
+ 
+    
 }
 
 
 .made-easy .button-div{
     margin-top: 3.9rem;
-
+    overflow: hidden;
 
 }
 .made-easy button{
@@ -512,18 +465,22 @@ transition: filter .4s ease-in-out;
     border-radius: 10px;
     border: 0;
     outline: none;
+
  
     
 }
 
 .image-div{
-    /* display: none; */
+
     width: 80%;
     margin: auto;
+    overflow: hidden;
+   
 }
 
 .image-div .mobile{
     display: none;
+
 }
 
 
@@ -534,6 +491,7 @@ transition: filter .4s ease-in-out;
     width: inherit;
     min-width: 900px;
     margin-bottom: -.2rem;
+
   
 }
 
@@ -542,6 +500,12 @@ transition: filter .4s ease-in-out;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    overflow-x: hidden;
+    transform: translateX(-200px);
+    opacity: 0;
+    transition: 450ms;
+ 
 }
 
 .medical-provider-left-div  { 
@@ -549,11 +513,13 @@ transition: filter .4s ease-in-out;
 margin-bottom: 12rem;
 
 
+
 }
 .medical-prodiver-left-div-wrapper{
    
     width: 70%;
     margin-left: auto;
+
 
 
 }
@@ -600,6 +566,7 @@ margin-bottom: 12rem;
 .medical-provider-img-container{
  width: 80%;
  margin: auto;
+
 }
 
 .medical-provider-right-div img{
@@ -821,7 +788,8 @@ margin-bottom: 12rem;
 
 .image-div{
     width: 100%;
-    overflow: hidden;
+
+    
     
     
 }
@@ -995,6 +963,40 @@ margin-bottom: 12rem;
 
 @media screen and (max-width : 413px) {
 
+
+    .left-pay-bill{
+
+        transform: translateX(-50px);
+        
+
+    }
+
+    .right-pay-bill{
+        transform: translateX(50px);
+
+    }
+
+    .landing-page-left{
+        transform: translateX(-50px);
+
+    }
+    .landing-page-right{
+        transform: translateX(50px);
+
+    }
+
+    .why-pay{
+        transform: translateX(50px);
+    }
+    .people-first{
+        transform: translateX(-50px);
+    }
+
+    .medical-provider{
+        transform: translateX(-50px);
+    }
+   
+
     .nav-left img{
         width: 3.5rem;
     }
@@ -1036,4 +1038,24 @@ margin-bottom: 12rem;
 
   
 
+}
+
+
+
+
+/* intersection observer animations*/
+
+.show-left {
+    transform: translateX(0px);
+    transition: 500ms; 
+    opacity: 1;
+   
+    
+    
+}
+
+.show-right {
+    transform: translateX(0px);
+    transition: 500ms; 
+    opacity: 1;
 }
