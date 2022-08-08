@@ -12,14 +12,24 @@ body {
 	color: #333333;
 	
 }
+body {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+body::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
 
 header {
 	position: fixed;
 	top: 36px;
 	left: 36px;
+	z-index: 1;
+
 
   
 }
+
 
 
 
@@ -31,4 +41,79 @@ section {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+div.content{
+	position: relative;
+}
+
+div.square{
+	width: 100px;
+	height: 100px;
+	background-color: #d54146;
+
+	position: absolute;
+	top: 50px;
+	left: -50px;
+}
+div.circle{
+	width: 100px;
+	height: 100px;
+	background-color: #5982a0;
+
+	position: absolute;
+	bottom: 50px;
+	right: -50px;
+	border-radius: 50%;
+
+}
+section.s2{
+	background-color: #c5c5c5;
+}
+
+section.s2 div.square{
+	background-color: #d6ac35;
+}
+
+section.s2 div.circle{
+	background-color: #be3c52;
+}
+
+div.content img{
+	position: relative;
+}
+
+section.s3{
+	background-color: #292121;
+}
+
+
+section.s3 div.square{
+	background-color: #f53736;
+}
+
+section.s3 div.circle{
+	background-color: #6e5f67;
+}
+
+section.s4{
+	background-color: #f3f1f2;
+}
+
+section.s4 div.square{
+	background-color: #d54156;
+}
+section.s4 div.circle{
+	background-color: #5982a0;
+}
+
+div.progress{
+	position: fixed;
+	/* top: 0px; */
+	/* left: 0px; */
+	width: 0;
+	height: 10px;
+	background-color: #333333;
+	z-index: 1;
+
 }
