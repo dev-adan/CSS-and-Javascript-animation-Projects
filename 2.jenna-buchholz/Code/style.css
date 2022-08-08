@@ -25,6 +25,8 @@ header {
 	top: 36px;
 	left: 36px;
 	z-index: 1;
+	transition: color .5s;
+	
 
 
   
@@ -115,5 +117,14 @@ div.progress{
 	height: 10px;
 	background-color: #333333;
 	z-index: 1;
+	transition: background-color 0.5s ;
 
+}
+
+header.white{
+	color: white;
+}
+
+div.progress.white{
+	background-color: white;
 }
