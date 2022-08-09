@@ -40,10 +40,12 @@ document.addEventListener('scroll',function () {
 
   sections.forEach(section => {
     if(section.offsetTop - 100 <= pixels){
+    
       clientTag.innerHTML = section.getAttribute('data-client')
       pageTag.innerHTML =  section.getAttribute('data-page')
 
       if(section.hasAttribute('data-is-dark')){
+       
         headerTag.classList.add('white');
         progressTag.classList.add('white')
         
@@ -54,5 +56,20 @@ document.addEventListener('scroll',function () {
       }
 
     }
+  })
+})
+
+//parallax effect 
+
+document.addEventListener('scroll', function(){
+  const topViewPort = window.pageYOffset;
+  const midViewPort = topViewPort + (window.innerHeight/2);
+
+  sections.forEach(section => {
+    const topSection = section.offsetTop;
+    const midSection = topSection + (section.offsetHeight/2)
+
+    const distanceToSection = midViewPort - midSection
+    console.log(distanceToSection)
   })
 })
