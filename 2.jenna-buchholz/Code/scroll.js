@@ -70,6 +70,19 @@ document.addEventListener('scroll', function(){
     const midSection = topSection + (section.offsetHeight/2)
 
     const distanceToSection = midViewPort - midSection
-    console.log(distanceToSection)
+    
+
+    // const tag = section.querySelector('div.square');
+    const parallaxTags = section.querySelectorAll('[data-parallax]');
+
+    
+    parallaxTags.forEach(tag => {
+      const speed = parseFloat(tag.getAttribute('data-parallax'));
+      tag.style.transform = `translate(0,${distanceToSection * speed}px)`;
+    })
+
+  
+
+
   })
 })
