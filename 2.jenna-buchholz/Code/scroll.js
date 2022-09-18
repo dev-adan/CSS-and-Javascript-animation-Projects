@@ -9,7 +9,7 @@ const headerTag = document.querySelector('header')
 //when we scroll the page update the pixel tag to how far we scrolled
 
 document.addEventListener('scroll',function(){
-  const pixels = window.pageYOffset;
+  const pixels = Math.round(window.pageYOffset);
   pixelsTag.innerHTML = pixels
 
 
@@ -22,7 +22,7 @@ document.addEventListener('scroll',function(){
   const pageHeight = bodyTag.getBoundingClientRect().height;
   const totalScrollableDistance = pageHeight - window.innerHeight;
 
-  const percentage = pixels / totalScrollableDistance
+  const percentage = pixels / totalScrollableDistance;
 
   progressTag.style.width = `${percentage * 100}%`;
 

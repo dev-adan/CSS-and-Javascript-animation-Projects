@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=BIZ+UDGothic&family=Barlow+Condensed:wght@100&family=Dancing+Script:wght@500&family=Permanent+Marker&family=Playfair+Display:ital@1&family=Rubik:ital,wght@0,300;0,500;1,900&display=swap');
+
+
+
+ *,
+ :before,
+ :after{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+ }
+
+
+ body  {
+    font-family :'Rubik',Arial;
+    font-size : 16px;
+    line-height : 1.5;
+    font-weight  : 200;
+
+    background-color : #ffffff;
+    color : #052837;
+   
+ }
+
+
+ h1{
+    font-size : 24px;
+    font-weight : 900;
+    font-style : italic;
+ }
+
+ header {
+
+    position : fixed;
+    top : 0;
+    left: 0;
+    background-color : #c7f2f1;
+    width : 100%;
+    z-index: 1;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0px 48px 0 48px;
+    
+
+ }
+
+ header h1, header nav{
+   flex: 1;
+
+ }
+
+ header nav{
+   text-align: right;
+ }
+
+ header a{
+   margin: 0 0 0 16px;
+ }
